@@ -94,11 +94,4 @@ const checks = [
   },
 ];
 
-module.exports = (input, hmacKey = null) => {
-  try {
-    return checks.every((check) => check(input, hmacKey));
-  } catch (e) {
-    console.error(e);
-    return false;
-  }
-};
+module.exports = (input, hmacKey = null) => checks.every((check) => check(input, hmacKey));
