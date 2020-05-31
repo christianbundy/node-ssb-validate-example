@@ -35,20 +35,21 @@ const isHmacValid = (hmacKey) => {
   );
 };
 
+// TODO: Rename this function
 const f = (signatureBytes, unsignedUtf8, publicKeyBytes, hmacKey) => {
   return hmacKey === null
     ? sodium.crypto_sign_verify_detached(
-      signatureBytes,
-      unsignedUtf8,
-      publicKeyBytes
-    )
+        signatureBytes,
+        unsignedUtf8,
+        publicKeyBytes
+      )
     : typeof hmacKey === "string" &&
-    isHmacValid(hmacKey) &&
-    sodium.crypto_sign_verify_detached(
-      signatureBytes,
-      getPayload(hmacKey, unsignedUtf8),
-      publicKeyBytes
-    );
+        isHmacValid(hmacKey) &&
+        sodium.crypto_sign_verify_detached(
+          signatureBytes,
+          getPayload(hmacKey, unsignedUtf8),
+          publicKeyBytes
+        );
 };
 
 const validateSignature = (unsignedMessage, signature, hmacKey) => {
@@ -81,7 +82,6 @@ const validateSignature = (unsignedMessage, signature, hmacKey) => {
     f(signatureBytes, unsignedUtf8, publicKeyBytes, hmacKey)
   );
 };
-
 
 module.exports = (
   message,
@@ -131,7 +131,7 @@ module.exports = (
           hmacKey
         )
       );
-    }
+    },
   };
   return (
     typeof message === "object" &&
@@ -139,7 +139,7 @@ module.exports = (
     Array.isArray(message) === false &&
     // Usually when we encode a message we use Latin-1.
     Buffer.from(JSON.stringify(message, null, 2), "latin1").byteLength <=
-    8192 &&
+      8192 &&
     Object.keys(message).length === 7 &&
     Object.entries(message).every(([key, value], index) => {
       return (

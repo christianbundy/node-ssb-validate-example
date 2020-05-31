@@ -6,19 +6,11 @@ const isValid = require(".");
 
 const testData = (...args) => path.join(__dirname, "fixtures", ...args);
 
-fs.readFile(testData("maybe.json")).then((valid) => {
+fs.readFile(testData("messages.json")).then((valid) => {
   const entries = JSON.parse(valid);
   entries.forEach((message) => {
     const state = message.state ? message.state : undefined;
-    const result = isValid(message.msg, message.cap, state);
-    tap.equal(result, message.valid, message.msg);
-  });
-});
-
-fs.readFile(testData("invalid.json")).then((valid) => {
-  const entries = JSON.parse(valid);
-  entries.forEach((message) => {
-    const result = isValid(message);
-    tap.equal(result, false, message);
+    const result = isValid(message.value, message.hmacKey, state);
+    tap.equal(result, message.valid, message.value);
   });
 });
