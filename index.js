@@ -1,121 +1,151 @@
 const sodium = require("sodium-native");
 
-module.exports = (message, hmacKey = null, state = { id: null, sequence: 0 }) =>
-  typeof message === "object" &&
-  message !== null &&
-  Array.isArray(message) === false &&
-  // Usually when we encode a message we use Latin-1.
-  Buffer.from(JSON.stringify(message, null, 2), "latin1").byteLength <= 8192 &&
-  Object.keys(message).length === 7 &&
-  Object.entries(message).every(([key, value], index) => {
-    switch (key) {
-      case "previous":
-        return index === 0 && value === state.id;
-      case "author":
-        return index === 1 || index === 2;
-      case "sequence":
-        return index === 1 || (index === 2 && value === state.sequence + 1);
-      case "timestamp":
-        return index === 3 && typeof value === "number";
-      case "hash":
-        return index === 4 && value === "sha256";
-      case "content":
-        if (index !== 5) {
-          return false;
-        }
-        switch (typeof value) {
-          case "object":
-            return (
-              value !== null &&
-              Array.isArray(value) === false &&
-              typeof value.type === "string" &&
-              value.type.length >= 3 &&
-              value.type.length <= 52
-            );
-          case "string": {
-            const parts = value.split(".box");
-            const base64 = parts[0];
-            const base64AndBack = Buffer.from(base64, "base64").toString(
-              "base64"
-            );
-            return base64 === base64AndBack;
-          }
-          default:
-            return false;
-        }
-      case "signature": {
-        const suffix = ".sig.ed25519";
+const isCanonicalBase64 = (base64String) => {
+  return (
+    base64String === Buffer.from(base64String, "base64").toString("base64")
+  );
+};
 
-        if (
-          index !== 6 ||
-          typeof value !== "string" ||
-          value.endsWith(suffix) === false
-        ) {
-          return false;
-        }
+const validateContentType = {
+  object: (value) => {
+    return (
+      value !== null &&
+      Array.isArray(value) === false &&
+      typeof value.type === "string" &&
+      value.type.length >= 3 &&
+      value.type.length <= 52
+    );
+  },
+  string: (value) => {
+    return isCanonicalBase64(value.split(".box")[0]);
+  },
+};
 
-        const unsignedMessage = Object.fromEntries(
-          Object.entries(message).filter(([key]) => key !== "signature")
-        );
+const getPayload = (hmacKey, unsignedUtf8) => {
+  const out = Buffer.alloc(sodium.crypto_auth_BYTES);
+  const key = Buffer.from(hmacKey, "base64");
+  sodium.crypto_auth(out, unsignedUtf8, key);
+  return out;
+};
 
-        // When checking signatures, we need to use UTF-8.
-        const unsignedUtf8 = Buffer.from(
-          JSON.stringify(unsignedMessage, null, 2),
-          "utf8"
-        );
+const isHmacValid = (hmacKey) => {
+  return (
+    typeof hmacKey === "string" &&
+    Buffer.from(hmacKey, "base64").length === sodium.crypto_auth_KEYBYTES
+  );
+};
 
-        if (typeof message.author !== "string") {
-          return false;
-        }
+const f = (signatureBytes, unsignedUtf8, publicKeyBytes, hmacKey) => {
+  return hmacKey === null
+    ? sodium.crypto_sign_verify_detached(
+      signatureBytes,
+      unsignedUtf8,
+      publicKeyBytes
+    )
+    : typeof hmacKey === "string" &&
+    isHmacValid(hmacKey) &&
+    sodium.crypto_sign_verify_detached(
+      signatureBytes,
+      getPayload(hmacKey, unsignedUtf8),
+      publicKeyBytes
+    );
+};
 
-        const authorSuffix = ".ed25519";
+const validateSignature = (unsignedMessage, signature, hmacKey) => {
+  const authorSuffix = ".ed25519";
+  const signatureSuffix = ".sig.ed25519";
 
-        if (message.author.endsWith(authorSuffix) === false) {
-          return false;
-        }
+  // When checking signatures, we need to use UTF-8.
+  const unsignedUtf8 = Buffer.from(
+    JSON.stringify(unsignedMessage, null, 2),
+    "utf8"
+  );
 
-        const publicKeyChars = message.author.slice(
-          1,
-          message.author.length - authorSuffix.length
-        );
-        const publicKeyBytes = Buffer.from(publicKeyChars, "base64");
+  const publicKeyChars = unsignedMessage.author.slice(
+    1,
+    unsignedMessage.author.length - authorSuffix.length
+  );
+  const publicKeyBytes = Buffer.from(publicKeyChars, "base64");
 
-        // Canonical check
-        if (publicKeyChars !== publicKeyBytes.toString("base64")) {
-          return false;
-        }
+  const signatureChars = signature.slice(
+    0,
+    signature.length - signatureSuffix.length
+  );
+  const signatureBytes = Buffer.from(signatureChars, "base64");
 
-        if (publicKeyBytes.length !== sodium.crypto_sign_PUBLICKEYBYTES) {
-          return false;
-        }
+  return (
+    isCanonicalBase64(publicKeyChars) &&
+    publicKeyBytes.length === sodium.crypto_sign_PUBLICKEYBYTES &&
+    signatureBytes.length === sodium.crypto_sign_BYTES &&
+    isCanonicalBase64(signatureChars) &&
+    f(signatureBytes, unsignedUtf8, publicKeyBytes, hmacKey)
+  );
+};
 
-        const signatureChars = value.slice(0, value.length - suffix.length);
-        const signatureBytes = Buffer.from(signatureChars, "base64");
 
-        if (
-          signatureBytes.length !== sodium.crypto_sign_BYTES ||
-          signatureBytes.toString("base64") !== signatureChars
-        ) {
-          return false;
-        }
+module.exports = (
+  message,
+  hmacKey = null,
+  state = { id: null, sequence: 0 }
+) => {
+  const keyValidators = {
+    previous: (value, index) => {
+      return index === 0 && value === state.id;
+    },
+    author: (value, index) => {
+      const authorSuffix = ".ed25519";
+      return (
+        (index === 1 || index === 2) &&
+        typeof value === "string" &&
+        value.endsWith(authorSuffix)
+      );
+    },
+    sequence: (value, index) => {
+      return (index === 1 || index === 2) && value === state.sequence + 1;
+    },
+    timestamp: (value, index) => {
+      return index === 3 && typeof value === "number";
+    },
+    hash: (value, index) => {
+      return index === 4 && value === "sha256";
+    },
+    content: (value, index) => {
+      return (
+        index === 5 &&
+        typeof validateContentType[typeof value] === "function" &&
+        validateContentType[typeof value](value, index)
+      );
+    },
+    signature: (value, index) => {
+      const suffix = ".sig.ed25519";
 
-        const out = Buffer.alloc(sodium.crypto_auth_BYTES);
-
-        if (hmacKey !== null && typeof hmacKey === "string") {
-          const key = Buffer.from(hmacKey, "base64");
-          if (key.length !== sodium.crypto_auth_KEYBYTES) {
-            return false;
-          }
-          sodium.crypto_auth(out, unsignedUtf8, key);
-        }
-
-        const payload = hmacKey === null ? unsignedUtf8 : out;
-
-        return sodium.crypto_sign_verify_detached(
-          signatureBytes,
-          payload,
-          publicKeyBytes
-        );
-      }
+      return (
+        index === 6 &&
+        typeof value === "string" &&
+        value.endsWith(suffix) &&
+        validateSignature(
+          Object.fromEntries(
+            Object.entries(message).filter(([key]) => key !== "signature")
+          ),
+          value,
+          hmacKey
+        )
+      );
     }
-  });
+  };
+  return (
+    typeof message === "object" &&
+    message !== null &&
+    Array.isArray(message) === false &&
+    // Usually when we encode a message we use Latin-1.
+    Buffer.from(JSON.stringify(message, null, 2), "latin1").byteLength <=
+    8192 &&
+    Object.keys(message).length === 7 &&
+    Object.entries(message).every(([key, value], index) => {
+      return (
+        typeof keyValidators[key] === "function" &&
+        keyValidators[key](value, index)
+      );
+    })
+  );
+};
