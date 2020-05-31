@@ -1,7 +1,6 @@
 const sodium = require("sodium-native");
 
-module.exports = (message, hmacKey = null, state = { id: null, sequence: 0 }) =>
-  // Ensure that the message is an actual object
+module.exports = (message, hmacKey = null, state = { id: null, sequence: 0 }) => 
   typeof message === "object" &&
   message !== null &&
   Array.isArray(message) === false &&
@@ -45,13 +44,16 @@ module.exports = (message, hmacKey = null, state = { id: null, sequence: 0 }) =>
             return false;
         }
       case "signature": {
+        const suffix = ".sig.ed25519";
+
         if (
           index !== 6 ||
           typeof value !== "string" ||
-          value.endsWith("sig.ed25519") === false
+          value.endsWith(suffix) === false
         ) {
           return false;
         }
+
 
         const copy = JSON.parse(JSON.stringify(message));
         delete copy.signature;
@@ -62,7 +64,14 @@ module.exports = (message, hmacKey = null, state = { id: null, sequence: 0 }) =>
         if (typeof copy.author !== "string") {
           return false;
         }
-        const publicKeyChars = copy.author.slice(1, 45);
+
+        const authorSuffix = '.ed25519'
+
+        if (copy.author.endsWith(authorSuffix) === false) {
+          return false
+        }
+
+        const publicKeyChars = copy.author.slice(1, copy.author.length - authorSuffix.length);
         const publicKeyBytes = Buffer.from(publicKeyChars, "base64");
 
         // Canonical check
@@ -74,20 +83,9 @@ module.exports = (message, hmacKey = null, state = { id: null, sequence: 0 }) =>
           return false;
         }
 
-        const correctSignatureLength = 100;
-        const suffix = ".sig.ed25519";
-
-        if (value.length !== correctSignatureLength) {
-          return false;
-        }
-
-        if (value.endsWith(".sig.ed25519") === false) {
-          return false;
-        }
-
         const signatureChars = value.slice(
           0,
-          correctSignatureLength - suffix.length
+          value.length - suffix.length
         );
         const signatureBytes = Buffer.from(signatureChars, "base64");
 
@@ -118,3 +116,4 @@ module.exports = (message, hmacKey = null, state = { id: null, sequence: 0 }) =>
       }
     }
   });
+
