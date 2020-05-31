@@ -1,6 +1,6 @@
 const sodium = require("sodium-native");
 
-module.exports = (message, hmacKey = null, state = { id: null, sequence: 0 }) => 
+module.exports = (message, hmacKey = null, state = { id: null, sequence: 0 }) =>
   typeof message === "object" &&
   message !== null &&
   Array.isArray(message) === false &&
@@ -54,24 +54,30 @@ module.exports = (message, hmacKey = null, state = { id: null, sequence: 0 }) =>
           return false;
         }
 
-
-        const copy = JSON.parse(JSON.stringify(message));
-        delete copy.signature;
+        const unsignedMessage = Object.fromEntries(
+          Object.entries(message).filter(([key]) => key !== "signature")
+        );
 
         // When checking signatures, we need to use UTF-8.
-        const copyUtf8 = Buffer.from(JSON.stringify(copy, null, 2), "utf8");
+        const unsignedUtf8 = Buffer.from(
+          JSON.stringify(unsignedMessage, null, 2),
+          "utf8"
+        );
 
-        if (typeof copy.author !== "string") {
+        if (typeof message.author !== "string") {
           return false;
         }
 
-        const authorSuffix = '.ed25519'
+        const authorSuffix = ".ed25519";
 
-        if (copy.author.endsWith(authorSuffix) === false) {
-          return false
+        if (message.author.endsWith(authorSuffix) === false) {
+          return false;
         }
 
-        const publicKeyChars = copy.author.slice(1, copy.author.length - authorSuffix.length);
+        const publicKeyChars = message.author.slice(
+          1,
+          message.author.length - authorSuffix.length
+        );
         const publicKeyBytes = Buffer.from(publicKeyChars, "base64");
 
         // Canonical check
@@ -83,10 +89,7 @@ module.exports = (message, hmacKey = null, state = { id: null, sequence: 0 }) =>
           return false;
         }
 
-        const signatureChars = value.slice(
-          0,
-          value.length - suffix.length
-        );
+        const signatureChars = value.slice(0, value.length - suffix.length);
         const signatureBytes = Buffer.from(signatureChars, "base64");
 
         if (
@@ -103,10 +106,10 @@ module.exports = (message, hmacKey = null, state = { id: null, sequence: 0 }) =>
           if (key.length !== sodium.crypto_auth_KEYBYTES) {
             return false;
           }
-          sodium.crypto_auth(out, copyUtf8, key);
+          sodium.crypto_auth(out, unsignedUtf8, key);
         }
 
-        const payload = hmacKey === null ? copyUtf8 : out;
+        const payload = hmacKey === null ? unsignedUtf8 : out;
 
         return sodium.crypto_sign_verify_detached(
           signatureBytes,
@@ -116,4 +119,3 @@ module.exports = (message, hmacKey = null, state = { id: null, sequence: 0 }) =>
       }
     }
   });
-
