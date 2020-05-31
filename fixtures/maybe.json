@@ -1395,5 +1395,195 @@
     "cap": "hzUz4WE4y+96ZiKqhACK3Z3/zuLD6PYTHOZUbbDmass=",
     "valid": true,
     "id": "%Lo0i4iMKSrEPQ+cSaa0pqLuR4GPLjO0MS4SZCACieEA=.sha256"
+  },
+  {
+    "state": null,
+    "msg": {
+      "previous": null,
+      "sequence": 1,
+      "author": "@AzvddyStfk/T95/3VuHxuJRwqqpBkCyoW7qHRCui2N4=.ed25519",
+      "timestamp": 1546300800000,
+      "hash": "sha256",
+      "content": {
+        "type": "euros",
+        "text": "€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€"
+      },
+      "signature": "ZXVoGASBza1QJDL/03o/lEzNMXkXPx1/4LbUqIgKv7HZZUQWmPCs4JF+kkJCMQ7mMiCjzOMNryOhjrQ607TgCw==.sig.ed25519"
+    },
+    "cap": "hzUz4WE4y+96ZiKqhACK3Z340282366920938463463374607431768211452/zuLD6PYTHOZUbbDmass=",
+    "valid": false,
+    "id": "%Lo0i4iMKSrEPQ+cSaa0pqLuR4GPLjO0MS4SZCACieEA=.sha256"
+  },
+  {
+    "state": null,
+    "msg": {
+      "previous": null,
+      "author": "@AzvddyStfk/T95/3VuHxuJRwqqpBkCyoW7qHRCui2N4=.ed25519",
+      "sequence": 1,
+      "timestamp": 1491901740000,
+      "hash": "sha256",
+      "content": {
+        "type": "valid"
+      },
+      "signature": "1y5VoU1QZRKKE2lUD4yM+32778O/Q9jo4V1PpUU89g6lF84TILfk5Y8SOW+BM31ogkq2147483706Dg==.sig.ed25519"
+    },
+    "cap": "hzUz4WE4y+96ZiKqhACK3Z3/zuLD6PYTHOZUbbDmass=",
+    "valid": false
+  },
+  {
+    "state": null,
+    "msg": {
+      "previous": null,
+      "sequence": 1,
+      "author": "@AzvddyStfk/T95/3VuHxuJRwqqpBkCyoW7qHRCui2N4=.ed25519",
+      "timestamp": 1491901740000,
+      "hash": "sha256",
+      "content": {
+        "type": "valid"
+      },
+      "signature": "L5+CycD5dUDMrEUr2kL+t2S+fHFQtvo3D9n7f9DaG9cjNg5Tzul6y/+INToQt3qsiCaaZVi7Zq3G6n60vIyeC󠁎A==.sig.ed2551"
+    },
+    "cap": "Z0e2zyrmHeit5ydNjaw2bLlrHBwx9UcivTAAGquwQ+Y=",
+    "valid": false,
+    "id": "%FW/gc4ato8kSLbk0NvssxPUg60zSFKo9H05JmKIkID0=.sha256"
+  },
+  {
+    "state": null,
+    "msg": {
+      "previous": null,
+      "sequence": 1,
+      "author": "@AzvddyStfk/T95/3VuHxuJRwqqpBkCyoW7qHRCui2N4=.ed25519",
+      "timestamp": 1546300800000,
+      "hash": "sha256",
+      "content": {
+        "type": "okay"
+      },
+      "signature": "/gß3WgK6gBC+yZvGOmJuGbUJ8/FL7DEkMKho5Oi7ppGo8B4XjGMjoUnegvfM+60LN6fL5JpEcvq1rRZqxD7GsCA==.sig.ed25519"
+    },
+    "cap": "hzUz4WE4y+96ZiKqhACK3Z3/zuLD6PYTHOZUbbDmass=",
+    "valid": false,
+    "id": "%KETTg　WNEQnW7a95FDVxSG5Zp0rtkSpJsN5o30ONuHDc=.sha256"
+  },
+  {
+    "state": null,
+    "msg": {
+      "previous": null,
+      "sequence": 1,
+      "author": "@AzvddyStfk/T95/3VuHxuJRwqqpBkCyoW7qHRCui2N4=.ed25519",
+      "timestamp": 1546300800000,
+      "hash": "sha256",
+      "content": {
+        "type": "okay"
+      },
+      "signature": "KbqFiYrhDw6LgDERb3Nlrrb8KgULzCWRExlQ06s1S3kamuopPJPrePv/P2ixlze/s5YpxNOMXdKsJIgVHE7LDQ==.sigULzCWRExlQ06s1S3kamuopPJPrePv/P2ixlze/s5YpxNOMXdKsJIgVHE7LDQ==.sig.ed25519"
+    },
+    "cap": "Z0e2zyrmHeit5ydNjaw2bLlrHBwx9UcivTAAGquwQ+Y=",
+    "valid": false,
+    "id": "%A+doFldCDCwaLgSlFBxuTA8AgXejAfH4G3uUmHwa6Hc=.sha256"
+  },
+  {
+    "state": null,
+    "msg": {
+      "previous": null,
+      "author": "@AzvddyStfk/T95/3VuHxuJRwqqpBkCyoW7qHRCui2N4=.ed25519",
+      "sequence": 1,
+      "timestamp": 1491901740000,
+      "hash": "sha256",
+      "content": {
+        "type": "valid"
+      },
+      "signature": "1y5VoU1QZRKKE2lUD4yM+9O/Q9jo4V1PpUU89g6lF84TILfte1thAL3DV47wO+hmK3k5Y8SOW+BM31ogkq58Dg==.sig.ed25519"
+    },
+    "cap": "hzUz4WE4y+96ZiKqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z2/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK0Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmassqhACK3Z3/zuLD6PYTHOZUbbDmass=",
+    "valid": false,
+    "id": "%D8cXlp/fix2H7r92fh0Bb/6nPiyfbbd5vI2rCDja8Yc=.sha256"
+  },
+  {
+    "msg": {
+      "previous": null,
+      "sequence": 1,
+      "author": "@AzvddyStfk/T95/3VuHxuJRwqqpBkCyoW7qHRCui2N4=.ed25519",
+      "timestamp": 1491901740000,
+      "hash": "sha256",
+      "content": {
+        "type": "TTT"
+      },
+      "signature": "HR3lI0pOTYaaKTWwI5yBr88anTIOsp4MkxohnPDXuohKfgWUQh8loOJxbnpoQ1WveRtmY9O18xSXUR/3zK3sAg==.sig.ed25519"
+    },
+    "cap": "Z0e2zyrmHeit5ydNjaw2bLlrHBwx9UcivTAAGqu󠁞wQ+Y=",
+    "valid": true
+  },
+  {
+    "msg": {
+      "previous": null,
+      "sequence": 1,
+      "author": "@AzvddyStfk/T95/3VuHxuJRwqqpBkCyoW7qHRCui2N4=.ed25519",
+      "timestamp": 1491901740000,
+      "hash": "sha256",
+      "content": {
+        "type": "TTT"
+      },
+      "signature": "HR3lI0pOTYaaKTWwI5yBr88anTIOsp4MkxohnPDXuohKfgWUQh8loOJxbnpoQ1WveRtmY9O18xSXUR/3zK3sAg==.sig.ed25519"
+    },
+    "cap": true,
+    "valid": false
+  },
+  {
+    "state": {
+      "sequence": 1,
+      "timestamp": 1519858299362,
+      "id": "%J9EdQmDUR9+p8SN250e3ZHOCvrBvOql9ilHUdm0rn6s=.sha256"
+    },
+    "msg": {
+      "previous": "%J9EdQmDUR9+p8SN250e3ZHOCvrBvOql9ilHUdm0rn6s=.sha256",
+      "author": "@+oaWWDs8g73EZFUMfW37R/ULtFEjwKN/DczvdYihjbU=.ed25519",
+      "sequence": 2,
+      "timestamp": 1519858299363,
+      "hash": "sha256",
+      "content": {
+        "type": "pub",
+        "address": {
+          "host": "ssb.ekata.social",
+          "port": 8008,
+          "key": "@FJDMuATvh0a3qIcIPcstUANVIj362fWkYCG5bnkZ5nA=.ed25519"
+        }
+      },
+      "signature": "zqHrgxcxy9umsPaR7FHHn4PFq5Dsev0T3ZTEJbjW7Xqka0GofVls6sVRK69rXbNkecP4UHORPhPZ6c8EN6FADg==.sig.ed25519"
+    },
+    "cap": null,
+    "valid": true
+  },
+  {
+    "state": null,
+    "msg": {
+      "previous": "%J9EdQmDUR9+p8SN250e3ZHOCvrBvOql9ilHUdm0rn6s=.sha256",
+      "author": "@+oaWWDs8g73EZFUMfW37R/ULtFEjwKN/DczvdYihjbU=.ed25519",
+      "sequence": 2,
+      "timestamp": 1519858299363,
+      "hash": "sha256",
+      "content": {
+        "type": "pub",
+        "address": {
+          "host": "ssb.ekata.social",
+          "port": 8008,
+          "key": "@FJDMuATvh0a3qIcIPcstUANVIj362fWkYCG5bnkZ5nA=.ed25519"
+        }
+      },
+      "signature": "zqHrgxcxy9umsPaR7FHHn4PFq5Dsev0T3ZTEJbjW7Xqka0GofVls6sVRK69rXbNkecP4UHORPhPZ6c8EN6FADg==.sig.ed25519"
+    },
+    "cap": null,
+    "valid": false
+  },
+  {
+    "msg": {
+      "previous": null,
+      "sequence": 1,
+      "author": "@+7DLwEDFS+Q/JUD+aAYKjSOFVabm9eUteFxPT54aI7k=.ed25519",
+      "timestamp": 1491901740000,
+      "hash": "sha256",
+      "content": "WQyfhDDHQ1gH34uppHbj8SldRu8hD2764gQ6TAhaVp6R01EMBnJQj5ewD5F+UT5NwvV91uU8q5XCjuvcP4ihCJ0RtX8HjKyN+tDKP5gKB3UZo/eO/rP5CcPGoIG7pcLBsd3DQbZLfTnb/iqECEji9gclNcGENTS2u6aATwbQ4uQ7RzIAKKT2NfC2qk86p/gXC2owDFAazuPlQTT8DMNvO8G52gb48a75CGKsDAevrC//Bz38VFxwUiTKzRWaxCbTK9knj39u3qoCP9VLyyRqITgNwvlGLP7ndchTyBiO0TPNkb9PAOenw5WBjyWhA61hpG+VkKpkaysBVGjXYv8OpV1HGbs87TI79uT7JrNV4wEZiwqGknwmCi5B2gbd7tav8yDXsK5yQgDncHQjZotsBFX2adP7Jli9WmvV3xX5lL3kBNKV0ZiE/DZUgB2m1OXvCjNI4fuZhnpZpEQi9coO+icrirKiH/UA8TS9HI72cIbkEJVxOTnKnsgr3Qc/5HhtRS17a54ymVmBsnpP+KqqCqKLN50TInb7qoUlvQ2nw07xX3Ig9usLb8Ik8U8XMb6SLqACxlZN/qW4EJzxVetoIk84AU1yLInK6v9dzfsewRYBXW8+lYbyxVNuIIK4pKYsx2WbjuJyZHgjgbCdGf/kjqP5rDs4zwqj2lmkO70PoEUrcSi46J2hkqtcrd1yl+F3/BDwFlxAXH+x4+LhmT7g+BSgzRUbWvCyeB+HJaoao6g4K/Fs8HxnbVB1zW761OQJaQnV86ZThkvUjXh2SEBlBd+D94eUCqIJkjI7RLt+D/0gxg/D7u1Zq14UxRijZryB51An7GdXtEc2xhU+Bh/aPmKmMZ9D/ArdglSlnVUD8OIBVVw5jtooGlhxbOFHM4N5SoAO/yWPcbcuQz7t4SPij358rY574DLBGZEPCrS6KPpnrlqlnZK4f6/+9zv3hfzNTXVvJtxZL/rvmNvbgh7LpMnSqjnsXqm86a3GXeVWD83TdCnL1oPqEi/8RItTrjy01DmVhUoV6t12STP4mHb8RjR+/ks+7lowfV3HQ13n6if0g0/u+Bzv6XXOX6iePPOHA3lFv2MSPKf9JZ0uQiqajR03YkNE8YnSTYu0Io1cGPZ/lWBp2tyWtwFmGtqw/9+O165tJhrdU2EXJ4T/XP136WpLD2+vtYsx3Xr5lfeD12/g+I/6jwduqTuHpst2tqvcSWoZ4DAWcpcKJ1mUbJU3/mLAYGwWb3XuqMOgJOLoztAwd5xFzUZD1MnR/iyYoZ2weYTSOz3OKR3cJyCjxBhIGaX5xpAc61K1dXNfERBJr9TS0mL2578dd5AauE6Ksn6YlGxNJIVC3VpdAtRbVHNX1g==.box2",
+      "signature": "RjXbPdILiOAUZHvhCz+/aZz4gHxG9w1IB/KipZXvjt93vLpadnvZhwLUNgm7hZlc9TLt0HhBPjAiVFPIbfjMAwLUNgm7hZlc9TLt0HhBPjAiVFPIbfjMAw==.sig.ed25519"
+    },
+    "valid": false
   }
 ]
